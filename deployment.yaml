@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: hiring-app
-        image: arjumand10/hiring-app:2
+        image: arjumand10/hiring-app:4
         ports:
         - containerPort: 8080
