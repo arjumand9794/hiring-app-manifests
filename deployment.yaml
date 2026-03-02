@@ -1,4 +1,5 @@
-# hiring-app-manifestsapiVersion: apps/v1
+# hiring-app-manifests
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hiring-app
