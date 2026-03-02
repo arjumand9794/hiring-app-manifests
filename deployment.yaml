@@ -1,0 +1,21 @@
+# hiring-app-manifestsapiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hiring-app
+  labels:
+    app: hiring-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hiring-app
+  template:
+    metadata:
+      labels:
+        app: hiring-app
+    spec:
+      containers:
+      - name: hiring-app
+        image: arjumand10/hiring-app:1
+        ports:
+        - containerPort: 8080
